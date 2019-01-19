@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div align="center" class="">
+    <div class="active-cyan-4 mb-4" id = "search-div">
+      <form class="" action="/lister" method="post" name="search">
+        <input class="form-control" type="text" name="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  </div>
+
+  {% for e in rs %}
+  <div align="center" class="" style="margin: 20px">
+    <h4 style="display: inline-block"><i>{{ e[0] }} - </i> Line{{e[1]}} </h4>
+    <h4 style="display: inline-block; background: #cccccc;"> :{{ e[2] }}</h4>
+  </div>
+  {% endfor %}
+{% endblock %}

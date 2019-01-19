@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% for f in filelist %}
+  <div class="" style="margin-top: 15px" align=center>
+    <h3>Succesfully uploaded {{ f.filename }}!</h3>
+  </div>
+  {% endfor %}
+{% endblock %}

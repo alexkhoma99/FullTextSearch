@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+#search-div {
+    width: 20%;
+
+}
+
+#indexform {
+  margin: auto;
+  margin-top: 4em;
+}
